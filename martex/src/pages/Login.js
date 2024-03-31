@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import loginImg from "../pages/Images/lumiére.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserLock } from "@fortawesome/free-solid-svg-icons";
-
+import "./Login.css";
 const Login = () => {
   return (
     <>
@@ -12,13 +12,13 @@ const Login = () => {
             <img src={loginImg} className="img-fluid" alt=""></img>;
           </div>
           <div className="col-6 lg-6 sm-3">
-            <form action="">
-              <h1> Login to your account</h1>
-              <div class="mb-3 row">
-                <label for="staticEmail" class="col-sm-2 col-form-label">
+            <form className="form" action="">
+              <h1 className="account"> Login to your account</h1>
+              <div class="  mb-3 row">
+                <label for="staticEmail" className="  col-sm-2 col-form-label">
                   Email
                 </label>
-                <div class="col-sm-10">
+                <div className=" col-sm-10">
                   <input
                     type="email"
                     class="form-control"
@@ -40,9 +40,11 @@ const Login = () => {
                   />
                 </div>
               </div>
-              <button className="btn btn-success">Login</button>
-              <FontAwesomeIcon icon={faUserLock} />
-              <p> Create new account</p>
+              <button className="btn btn-info">
+                Login <FontAwesomeIcon icon={faUserLock} />
+              </button>
+
+              <p className="p"> Create new account</p>
             </form>
           </div>
         </div>
